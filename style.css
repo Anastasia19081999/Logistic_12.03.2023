@@ -40,7 +40,9 @@ body {
     }
 ._container {
     max-width: 1316px;
+    padding: 0px 15px;
     margin: 0px auto;
+    box-sizing: content-box;
 }
 /* HEADER___________________________________________________________________________________________ */
 .header {
@@ -49,9 +51,11 @@ body {
     left: 0;
     top: 0;
     z-index: 50;
+    background-color: white;
 }
 .header__container {
     display: flex;
+    justify-content: space-between;
     min-height: 120px;
     align-items: center;
 }
@@ -59,27 +63,52 @@ body {
     width: 343px;
     height: 64px;
 }
+.container__poisk__menu {
+    display: flex;
+}
 .header__menu {
-    margin: 0px 0px 0px 183px;
+    margin: 0px 0px 0px 80px;
+}
+@media (max-width: 992px) {
+    .header__menu{
+        margin: 0px 0px 0px 80px;
+    }
+}
+@media (max-width: 767px) {
+    .header__menu{
+        margin: 0px 0px 0px 50px;
+    }
+}
+@media (max-width: 479px) {
+    .header__menu{
+        margin: 0px 0px 0px 20px;
+    }
 }
 .menu {
 
 }
 .menu__list {
     display: flex;
+
 }
 .menu__items {
     
 }
 .menu__items:not(:last-child) {
-    margin: 0px 21px 0px 0px;
+    margin: 0px 45px 0px 0px;
 }
 .menu__link {
     color: #333333;
     line-height: 142%;
     font-size: 20px;
     font-weight: 400;
+    flex-wrap: wrap;
 
+}
+@media (max-width: 479px) {
+    .menu__link {
+        font-size: 27px;
+    }
 }
 form {
     position: relative;
@@ -102,15 +131,167 @@ input, button {
     outline: none;
     background: transparent;
 }
-input, .search {
+input {
     align-items: center;
-    padding: 10px 5px 13px 5px;
 }
 .menu__button::before {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 24px;
     color: #A04955;
-    padding: 0px 0px 0px 10px ;
+    align-items: center;
+    /* padding: 0px 0px 0px 10px ; */
 
 }
+
+/* Body___________________________________________________________________________________________ */
+
+.wrapper__main {
+    min-width: 100%;
+    background-color: white;
+    height: 100vh;
+}
+.container_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+.main_title {
+    width: 578px;
+    height: 194px;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0px 0px 30px 0px;
+}
+.main_text {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.button {
+    width: 240px;
+    height: 50px;
+    background-color: inherit;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #A04955;
+    color:  white;
+}
+.wrapper_img {
+    position: relative;
+
+}
+.main_square_empty {
+    width: 518px;
+    height: 465px;
+    background-color: inherit;
+    border: 1px solid #A04955;
+    position: absolute;
+    right: 140px;
+    top: 156px;
+}
+.main_square {
+    width: 518px;
+    height: 465px;
+    background-color: #A04955;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.main_img {
+    position: relative;
+    top: 35px;
+    right: -10px;
+}
+
+/* Section 2___________________________________________________________________________________________ */
+
+.wrapper_march_collection {
+    background-color: #F1F1F1;
+}
+.container__title_march {
+    display: flex;
+    flex-direction: column;
+}
+.march_collect_text  {
+    font-size: 36px;
+    font-weight: 500;
+    color: #333333;
+}
+.march1 {
+    text-align: center;
+    margin-top: 80px;
+}
+.march2 {
+    text-align: center;
+    font-size: 64px;
+    line-height: 170%;
+    margin-bottom: 30px;
+}
+
+.container_march_collection {
+    display: flex;
+    justify-content: space-around;
+    /* margin-bottom: 80px; */
+}
+.march_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 416px;
+    background-color: white;
+    margin-bottom: 80px;
+
+}
+.march_photo {
+    width: 165px;
+    height: 165px;
+
+}
+.march_text{
+    width: 180px;
+    height: 72px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+.march_icons {
+    margin: 5px 0px;
+}
+.fa-solid {
+    color: #FFCC48;
+}
+.gray {
+    color:#BCBCCC;
+}
+.march_price {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 5px 0px 10px 0px;
+}
+.march_button {
+    width: 130px;
+    height: 35px;
+    background-color: #A04955;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px 0px;
+    cursor: pointer;
+}
+.march_button:hover {
+    background-color: white;
+    color:  #A04955;
+    border: 1px solid #A04955;
+}
+.fa-brands {
+    margin: 0px 3px ;
+}
+
