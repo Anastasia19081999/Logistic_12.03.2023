@@ -58,15 +58,19 @@ body {
     justify-content: space-between;
     min-height: 120px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .header__logo {
     width: 343px;
     height: 64px;
 }
 .container__poisk__menu {
+    flex-wrap: wrap;
     display: flex;
 }
 .header__menu {
+    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0px 0px 0px 80px;
 }
 @media (max-width: 992px) {
@@ -110,7 +114,7 @@ body {
         font-size: 27px;
     }
 }
-form {
+.form_header {
     position: relative;
     width: 270px;
     right: 0px;
@@ -157,6 +161,7 @@ input {
     align-items: center;
     height: 100vh;
 }
+
 .main_title {
     width: 578px;
     height: 194px;
@@ -295,3 +300,305 @@ input {
     margin: 0px 3px ;
 }
 
+
+
+/* Section 3___________________________________________________________________________________________ */
+
+.container_best_pants {
+    display: flex;
+    min-width: 100%;
+    background-color: white;
+    height: 90vh;
+}
+
+.container_pants_img {
+    position: relative;
+    align-items: center;
+    margin: 100px 60px 0px 0px ;
+}
+.pants_square_empty {
+    width: 518px;
+    height: 465px;
+    background-color: inherit;
+    border: 1px solid #A04955;
+}
+.pants_img {
+    position: relative;
+    z-index: 1;
+}
+.pants1 {
+    position: absolute;
+    left: 0px;
+    top: 156px;
+}
+.pants2 {
+    position: absolute;
+    left: 140px;
+    top: 12px;
+}
+.container_pants_text {
+    margin:  140px 0px 0px 0px;
+}
+
+
+
+/* Section 4______________________________________________________________________*/
+
+.wrapper_sale{
+    background-color: #F5F5F5;
+    min-width: 100%;
+}
+.container_sale {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ECOTHS {
+    margin-top: 110px;
+    position: relative;
+    margin-right: 36px;
+}
+.img_ECOTHS {
+    width: 550px;
+    height: 516px;
+}
+.ECOTHS_text {
+    width: 550px;
+    height: 132px;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    color:black;
+}
+.button_ECOTHS {
+    width: 366px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    color:black;
+    margin-bottom: 108px;
+}
+.block_ECOTHS {
+    position: absolute;
+    width: 550px;
+    height: 86px;
+    background-color:#a049559d;
+    top: 430px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Section 5______________________________________________________________________*/
+
+.SPORTIF_ORIGINAL_wrapper{
+    position: relative;
+}
+.SPORTIF_ORIGINAL_img {
+    width: 100%;
+}
+.SPORTIF_ORIGINAL_title {
+    position:absolute ;
+    top: 0px;
+    width: 30%;
+    margin-top: 30px;
+    font-size: 65px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.SPORTIF_ORIGINAL_text {
+    position: absolute;
+    top: 230px;
+    font-size: 26px;
+    font-weight: 100;
+    color: white;
+    width: 490px;
+}
+.SPORTIF_ORIGINAL_button {
+    position: absolute;
+    bottom: 55px;
+    width: 405px;
+    height: 50px;
+    background-color: #A04955;
+    border: 1px solid black;
+    font-size: 24px;
+    font-weight: 300;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.SPORTIF_ORIGINAL_button:hover {
+    background-color: white;
+    color:  #A04955;
+    border: 1px solid #A04955;
+}
+
+/* Section 6______________________________________________________________________*/
+
+.trend_sportif_container {
+    position: relative;
+    width: 100%;
+    height: 843px;
+}
+.block_trend {
+    width: 92%;
+    height: 339px;
+    background-color: #A04955;
+    margin: 0px auto;
+    margin-top: 90px;
+}
+.block_trend_text {
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    color: white;
+    padding-top: 30px;
+}
+.three_blocks_trend {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: -169px 0px 0px 0px;
+}
+.three_blocks {/
+    padding: 40px;
+    width: 314px;
+    height: 352px;
+    background-color: white;
+    border: 1px solid #A04955;
+    text-align: center;
+}
+.img_three_blocks {
+    padding: 0;
+    margin: 0;
+    width: 185px;
+    height: 214px;
+    margin-bottom: 10px;
+}
+.three_blocks_text {
+    margin-bottom: 10px ;
+}
+.three_blocks_button {
+    width: 242px;
+    height: 40px;
+    background-color: #A04955;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 auto;
+    color: white;
+}
+.three_blocks_button :hover {
+    background-color: white;
+    color:  #A04955;
+    border: 1px solid #A04955;
+}
+
+/* Section 7______________________________________________________________________*/
+
+.img_family {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -120px;
+}
+.family_container {
+    width: 85%;
+    height: 412px;
+    background-color: #F3F3F3;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.family_title {
+    font-size: 65px;
+    font-weight: 700;
+    color: #001F3D;
+    text-align: center;
+    padding: 130px 0px 0px 0px;
+}
+.family_text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+.family_button {
+    width: 261px;
+    height: 55px;
+    border: 1px solid black;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+
+
+.footer {
+    background-color: #A04955;
+    width: 100%;
+    height: 420px;
+}
+.footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+.footer_bocks {
+    margin: 50px 20px;
+}
+.ordering_container {
+
+}
+.footer_text {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+.footer_link {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0px 0px 0px;
+
+}
+.text_button {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 50px 0px 25px 0px;
+}
+.search_footer {
+    width: 515px;
+    height: 61px;
+    background-color: white;
+}
+.search_text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 100px 20px 0px;
+}
+.search_text::-webkit-input-placeholder {color:#A04955;}
+
+.search_footer_button {
+    width: 167px;
+    height: 43px;
+    background-color: #A04955;
+    color: white;
+    cursor: pointer;
+}
+.footer_reserved {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+}
+.text_footer_reserved {
+    font-size: 14px;
+    font-weight: 400;
+    color: #00000073;
+}
