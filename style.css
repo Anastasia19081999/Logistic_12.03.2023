@@ -135,8 +135,11 @@ input, button {
     outline: none;
     background: transparent;
 }
-input {
+.input_header {
+    width: 240px;
+    height: 50px;
     align-items: center;
+    padding-left: 15px;
 }
 .menu__button::before {
     content: "\f002";
